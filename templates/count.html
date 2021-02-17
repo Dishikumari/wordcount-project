@@ -1,0 +1,11 @@
+<h1>Total number of words in the list are {{count}}</h1>
+
+<a href="{% url 'homePage'%}">Home</a>
+
+<h2>Your entered text is : </h2>
+<span style="font-size: 20px;">{{fulltext}}</span>
+
+<h2>Word Count : </h2>
+{% for word , counttotal in sortedwords %}
+<span style="font-size: 20px;">{{word}} - {{counttotal}}</span></br>
+{% endfor%}

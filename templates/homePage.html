@@ -1,0 +1,14 @@
+<!-- <h1>Welcome to home page</h1>
+<span>{{user_name}}</span> -->
+
+<h1 style="text-align: center; color: crimson; text-shadow: darkslategrey; font-size: 50px;">WORD COUNTER</h1>
+<a href="{% url 'about'%}" style="float: right;">About</a>
+<form action="{% url 'count' %}">
+    <fieldset>
+        <legend style="color: firebrick; text-shadow: black; font-size: 40px;">Count the number of words</legend>
+        <textarea cols="81" rows="5" name= "fulltext" style=" font-size: 30px; background-color: gainsboro;"></textarea>
+    </fieldset></br>
+    <input type="submit" value="Count" style="background-color: lime; float: right; height: 30px; width: 70px;"/>
+</form>
+
+<!-- <button style="background-color: lime; float: right; height: 30px; width: 70px;" onclick="count">Save</button> -->
